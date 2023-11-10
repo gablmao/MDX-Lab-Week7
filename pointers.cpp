@@ -15,12 +15,12 @@ int main() {
     pointer_val = &val;
 
 
-    //pointer to address of pointer above
+    //&pointer_val -> pointer to address of pointer above
     //the value of variable is the memory address of the pointer
-    address_pointer = &pointer_val;
+    
 
     cout << "Variable value: " << val << "; address: " << &val << endl;
-    cout <<  "Pointer value: " << pointer_val << ", address: " << address_pointer << endl;
+    cout <<  "Pointer value: " << pointer_val << ", address: " << &pointer_val << endl;
     
     //to dereference, use * to a pointer variable
     cout << "Dereference: " << *pointer_val << endl;
